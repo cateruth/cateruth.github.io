@@ -153,7 +153,7 @@ div {
 footer {
     position: fixed;
     font-size: small;
-    left: 0;
+    left: -1em;
     bottom: 0;
     width: 100%;
     color: var(--primary);
