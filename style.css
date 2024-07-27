@@ -1,0 +1,230 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Kiwi+Maru&display=swap');
+
+/* 
+        Author: Caitlin Gerard
+        Date: 07/24/2024
+        Assignment Name: About a Company
+        Filename: styles.css
+*/
+* {
+    font-family: "Inter", sans-serif;
+    font-variant-caps: all-small-caps;
+}
+
+.topnav-right {
+    float: right;
+    margin-right: 5%;
+}
+
+.topnav-right a,
+.topnav-right a:visited,
+.experience a,
+.experience a:visited {
+    text-decoration: none;
+    padding: 1em;
+    color: black;
+}
+
+.topnav-right a:active,
+.topnav-right a:hover {
+    font-weight: bold;
+    color: #2a9d8f;
+}
+
+.experience a:hover,
+.experience a:active {
+    color: #2a9d8f;
+}
+
+.icon {
+    color: #2a9d8f;
+}
+
+img {
+    width: 85%;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.profileTxt {
+    float: right;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-areas: 'grid1' 'grid2';
+    gap: 5%;
+    width: 60%;
+    padding-left: 20%;
+    align-items: center;
+    text-align: center;
+    line-height: .6;
+}
+
+#experTab,
+#eduTab,
+#skillTab {
+    border-collapse: collapse;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#experTab td,
+#experTab th,
+#eduTab td,
+#eduTab th,
+#skillTab td,
+#skillTab th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#experTab tr:nth-child(even),
+#eduTab tr:nth-child(even),
+#skillTab tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#experTab tr:hover,
+#eduTab tr:hover,
+#skillTab tr:hover {
+    background-color: #ddd;
+}
+
+#experTab th,
+#eduTab th,
+#skillTab th {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    text-align: center;
+    background-color: #2a9d8f;
+    color: white;
+}
+
+.experience,
+.education,
+.skills,
+.contact {
+    padding: 4%;
+    text-align: center;
+}
+
+.contact {
+    line-height: 1.5;
+}
+
+input[type=text],
+input[type=email],
+input[type=phone],
+select {
+    width: 35%;
+    padding: 12px 20px;
+    margin: 8px 10px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #2a9d8f;
+    font-size: large;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #2a9d8f;
+}
+
+div {
+    border-radius: 5px;
+    padding: 10px;
+}
+
+footer {
+    position: fixed;
+    font-size: small;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: black;
+    text-align: right;
+}
+
+@media screen and (max-width: 4px) {
+    .topnav-right {
+        font-size: .9em;
+    }
+}
+
+@media screen and (max-width: 568px) {
+
+    .topnav-right a,
+    .topnav-right a:visited,
+    .experience a,
+    .experience a:visited {
+        padding: .5em;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .grid-container {
+        padding-left: 1%;
+        width: 100%;
+        grid-template-columns: 50% 50%;
+        gap: 1%;
+        line-height: 1;
+    }
+
+    input[type=text],
+    input[type=email],
+    input[type=phone],
+    select {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 1065px) {
+    .grid-container {
+        padding-left: 4%;
+    }
+}
+
+@media screen and (max-width: 1065px) {
+    .grid-container {
+        padding-left: 6%;
+        width: 100%;
+        grid-template-columns: 60% 50%;
+        gap: 2%;
+    }
+
+    .img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1152px) {
+    .grid-container {
+        padding-left: 15%;
+    }
+
+    .img {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 1220px) {
+    .grid-container {
+        width: 65%;
+        padding-left: 18%;
+    }
+}

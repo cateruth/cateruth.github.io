@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--
+        Author: Caitlin Gerard
+        Date: 07/24/2024
+        Assignment Name: Online Profile
+        Filename: contact.html
+         -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="graphic design, non-profit, springfield mo, sgf mo, sgf, mo" />
+    <title>Caitlin Gerard | Contact</title>
+    <link href="style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <div class="topnav">
+            <div class="topnav-right">
+                <a href="index.html">Profile</a>
+                <a href="skills.html">Skills</a>
+                <a href="experience.html">Experience</a>
+                <a href="education.html">Education</a>
+                <a class="active" href="contact.html">Contact</a>
+            </div>
+        </div>
+    </header>
+    <div class="contact">
+        <h2>Contact</h2>
+        <div class="container">
+            <form method="get" action="thankyou.html">
+                <fieldset id="contact">
+                    <label for="fname">
+                        First Name:
+                        <input autofocus type="text" name="fname" id="fname" required placeholder="First Name" />
+                    </label>
+                    <label for="lname">
+                        Last Name:
+                        <input type="text" name="lname" id="lname" required placeholder="Last Name" />
+                    </label>
+                    <br>
+                    <label for="email">
+                        Email:
+                        <input type="email" name="email" id="email" required placeholder="Email" />
+                    </label>
+                    <label for="phone">
+                        Phone:
+                        <input type="phone" name="phone" id="phone" required placeholder="Phone" />
+                    </label>
+                    <textarea name="info" placeholder="Any Additional Info"></textarea>
+                    <input class="submit" type="submit" value="Submit" />
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; Gerard Designs, 2024</p>
+    </footer>
+</body>
+
+</html>
