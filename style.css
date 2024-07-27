@@ -118,7 +118,7 @@ img {
 
 input[type=text],
 input[type=email],
-input[type=phone],
+input[type=tel],
 select {
     width: 35%;
     padding: 12px 20px;
@@ -187,7 +187,7 @@ footer {
 
     input[type=text],
     input[type=email],
-    input[type=phone],
+    input[type=tel],
     select {
         width: 30%;
     }
