@@ -4,9 +4,14 @@
 /* 
         Author: Caitlin Gerard
         Date: 07/24/2024
-        Assignment Name: About a Company
+        Assignment Name: Online Profile
         Filename: styles.css
 */
+:root {
+    --primary: black;
+    --light1: #ddd;
+    --teal: #2a9d8f;
+}
 * {
     font-family: "Inter", sans-serif;
     font-variant-caps: all-small-caps;
@@ -23,22 +28,18 @@
 .experience a:visited {
     text-decoration: none;
     padding: 1em;
-    color: black;
+    color: var(--primary);
 }
 
 .topnav-right a:active,
 .topnav-right a:hover {
     font-weight: bold;
-    color: #2a9d8f;
+    color: var(--teal);
 }
 
 .experience a:hover,
-.experience a:active {
-    color: #2a9d8f;
-}
-
-.icon {
-    color: #2a9d8f;
+.experience a:active, .icon {
+    color: var(--teal);
 }
 
 img {
@@ -78,7 +79,7 @@ img {
 #eduTab th,
 #skillTab td,
 #skillTab th {
-    border: 1px solid #ddd;
+    border: 1px solid var(--light1);
     padding: 8px;
 }
 
@@ -91,7 +92,7 @@ img {
 #experTab tr:hover,
 #eduTab tr:hover,
 #skillTab tr:hover {
-    background-color: #ddd;
+    background-color: var(--light1);
 }
 
 #experTab th,
@@ -100,7 +101,7 @@ img {
     padding-top: 1em;
     padding-bottom: 1em;
     text-align: center;
-    background-color: #2a9d8f;
+    background-color: var(--teal);
     color: white;
 }
 
@@ -131,7 +132,7 @@ select {
 
 input[type=submit] {
     width: 100%;
-    background-color: #2a9d8f;
+    background-color: var(--teal);
     font-size: large;
     color: white;
     padding: 14px 20px;
@@ -142,7 +143,7 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-    background-color: #2a9d8f;
+    background-color: var(--teal);
 }
 
 div {
@@ -156,7 +157,7 @@ footer {
     left: 0;
     bottom: 0;
     width: 100%;
-    color: black;
+    color: var(--primary);
     text-align: right;
 }
 
